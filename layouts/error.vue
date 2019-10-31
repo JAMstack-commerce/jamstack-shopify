@@ -1,0 +1,35 @@
+<template>
+  <div class="page-container drawer-page-content">
+    <main id="MainContent" class="main-content js-focus-hidden" role="main" tabindex="-1">
+      <div class="page-width">
+        <div class="empty-page-content text-center">
+          <h1 v-if="error.statusCode === 404">
+            404 Page Not Found
+          </h1>
+          <h1 v-else>
+            An error occurred
+          </h1>
+          <p v-if="error.statusCode === 404">
+            The page you requested does not exist.
+          </p>
+          <p>
+            <nuxt-link to="/" class="btn btn--has-icon-after">
+              Continue shopping
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-right" viewBox="0 0 20 8"><path d="M15.186.445c.865.944 1.614 1.662 2.246 2.154.631.491 1.227.857 1.787 1.098v.44a9.933 9.933 0 0 0-1.875 1.196c-.606.485-1.328 1.196-2.168 2.134h-.752c.612-1.309 1.253-2.315 1.924-3.018H.77v-.986h15.577c-.495-.632-.84-1.1-1.035-1.406-.196-.306-.486-.843-.87-1.612h.743z" fill="#000" fill-rule="evenodd" /></svg>
+            </nuxt-link>
+          </p>
+        </div>
+      </div>
+    </main>
+  </div>
+</template>
+<script>
+export default {
+  props: {
+    error: {
+      type: Object,
+      default: null
+    }
+  }
+}
+</script>
