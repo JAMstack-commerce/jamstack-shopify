@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "nuxt-i18n": "^6.3.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
