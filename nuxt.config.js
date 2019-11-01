@@ -8,9 +8,6 @@ export default {
   ** Headers of the page
   */
   head: {
-    htmlAttrs: {
-      lang: 'en'
-    },
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -50,8 +47,19 @@ export default {
     'nuxt-i18n'
   ],
   i18n: {
+    // baseUrl: productionDomain - make sure canonicals are set for alternate domains
     defaultLocale: 'en',
-    locales: ['en', 'lv'],
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US'
+      },
+      {
+        code: 'lv',
+        iso: 'lv-LV'
+      }
+    ],
+    seo: true,
     vueI18n: {
       messages: {
         en: require('./locales/en.json'),
