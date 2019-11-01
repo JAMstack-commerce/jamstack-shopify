@@ -61,6 +61,12 @@ export default {
     strategy: 'prefix_except_default'
   },
   /*
+  ** Static build configuration
+  */
+  generate: {
+    fallback: true
+  },
+  /*
   ** Build configuration
   */
   build: {
