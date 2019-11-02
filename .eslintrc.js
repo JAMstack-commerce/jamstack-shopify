@@ -5,13 +5,26 @@ module.exports = {
     node: true
   },
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: '@typescript-eslint/parser'
   },
   extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended'
+    '@nuxtjs/eslint-config-typescript',
+    'plugin:vue/essential',
+    'plugin:nuxt/recommended',
+    'airbnb-base'
+  ],
+  settings: {
+    'import/resolver': {
+      typescript: {}
+    }
+  },
+  plugins: [
+    'vue',
+    '@typescript-eslint',
+    'import',
   ],
   // add your custom rules here
   rules: {
+    'class-methods-use-this': 'off',
   }
 }
