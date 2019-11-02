@@ -8,9 +8,6 @@ export default {
   ** Headers of the page
   */
   head: {
-    htmlAttrs: {
-      lang: 'en'
-    },
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -47,7 +44,36 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    'nuxt-i18n'
   ],
+  i18n: {
+    // baseUrl: productionDomain - make sure canonicals are set for alternate domains
+    defaultLocale: 'en',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US'
+      },
+      {
+        code: 'lv',
+        iso: 'lv-LV'
+      }
+    ],
+    seo: true,
+    vueI18n: {
+      messages: {
+        en: require('./locales/en.json'),
+        lv: require('./locales/lv.json')
+      }
+    },
+    strategy: 'prefix_except_default'
+  },
+  /*
+  ** Static build configuration
+  */
+  generate: {
+    fallback: true
+  },
   /*
   ** Build configuration
   */
