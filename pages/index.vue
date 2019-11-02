@@ -28,14 +28,15 @@
   </div>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
+<script lang="ts">
+import { Component, Vue } from 'nuxt-property-decorator';
+import Logo from '~/components/Logo.vue';
 
-export default {
-  components: {
-    Logo
-  }
-}
+@Component({
+  components: { Logo },
+})
+class Index extends Vue {}
+export default Index;
 </script>
 
 <style>
