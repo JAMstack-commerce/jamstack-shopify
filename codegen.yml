@@ -1,0 +1,8 @@
+schema:
+  - https://graphql.myshopify.com/api/2019-10/graphql:
+      headers:
+        Authorization: Basic MzUxYzEyMjAxN2QwZjJhOTU3ZDMyYWU3MjhhZDc0OWM=
+generates:
+  ./interfaces/storefront-api.ts:
+    plugins:
+      - typescript
