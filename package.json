@@ -10,7 +10,7 @@
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "generate-graphql-types": "graphql-codegen",
-    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore ."
+    "lint": "eslint --ext .ts,.js,.vue ."
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.2.4",
