@@ -26,12 +26,13 @@ export default {
   ** Global CSS
   */
   css: [
-    '@assets/theme.scss',
+    'buefy/dist/buefy.css',
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/buefy',
   ],
   /*
   ** Nuxt.js dev-modules

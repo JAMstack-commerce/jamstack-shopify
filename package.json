@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.2.4",
+    "buefy": "^0.8.6",
     "dotenv": "^8.2.0",
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^6.3.0",
