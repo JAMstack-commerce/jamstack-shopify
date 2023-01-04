@@ -16,7 +16,7 @@
     "@nuxt/typescript-runtime": "^0.2.4",
     "buefy": "^0.8.6",
     "dotenv": "^8.2.0",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "nuxt-i18n": "^6.3.0",
     "nuxt-property-decorator": "^2.5.0",
     "vue-class-component": "^7.1.0"
